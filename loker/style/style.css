@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 13px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.selector {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 20px;
+  max-width: 340px;
+  width: 90%;
+  box-shadow: -20px -30px #ccd5f9;
+}
+
+.filter-bar {
+  display: flex;
+  margin: 30px auto;
+  margin-bottom: 20px;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.filter-btn {
+  background: none;
+  border: 1px solid #dde1f4;
+  width: 65px;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #4a6fff;
+  color: #fff;
+}
+
+.search-input {
+  width: 80%;
+  padding: 14px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid #dde1f4;
+  background: #f2f5ff;
+  border-radius: 5px;
+}
+
+.daerah-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#lowongan-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.daerah-title {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+#lowongan-tite {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.daerah-title:hover {
+  background-color: #f2f5ff;
+  border-radius: 4px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.daerah title.selected {
+  background-color: #e0e7ff;
+  border-radius: 5px;
+  padding: 14px;
+}
+
+.no-results {
+  text-align: center;
+  color: #999;
+  padding: 10px;
+}
+
+@media (max-width: 365px) {
+  .selector {
+    width: 80%;
+  }
+
+  .filter-bar {
+    flex-wrap: wrap;
+    min-width: unset;
+  }
+
+  .filter-btn {
+    flex: 1 1 45%;
+  }
+
+  .daerah-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .icon {
+    margin-bottom: 8px;
+  }
+
+  .heart {
+    align-self: flex-end;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+.status-button {
+  background-color: #f0ad4e; /* Warna oranye untuk tombol status */
+  color: white; /* Teks berwarna putih */
+  border: none; /* Tanpa border */
+  padding: 5px 10px; /* Padding */
+  text-align: center; /* Teks rata tengah */
+  text-decoration: none; /* Tanpa garis bawah */
+  display: inline-block; /* Menyusun tombol dalam baris */
+  margin: 5px; /* Jarak antar tombol */
+  cursor: pointer; /* Tangan saat hover */
+  border-radius: 5px; /* Sudut membulat */
+}
+
+.status-button:hover {
+  background-color: #ec971f; /* Warna lebih gelap saat hover */
+}
+.copy-button {
+  background-color: #7886f5; /* Warna oranye untuk tombol status */
+  color: white; /* Teks berwarna putih */
+  border: none; /* Tanpa border */
+  padding: 10px 15px; /* Padding */
+  text-align: center; /* Teks rata tengah */
+  text-decoration: none; /* Tanpa garis bawah */
+  display: inline-block; /* Menyusun tombol dalam baris */
+  margin: 5px; /* Jarak antar tombol */
+  cursor: pointer; /* Tangan saat hover */
+  border-radius: 5px; /* Sudut membulat */
+}
+
+.copy-button:hover {
+  background-color: #495ef6; /* Warna lebih gelap saat hover */
+}
+
+#uploadForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fileInput {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  padding: 6px;
+  font-size: 0.9rem;
+}
+
+#uploadForm button {
+  background-color: #4a6fff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+#uploadForm button:hover {
+  background-color: #1d44e4;
+}
+
+#uploadMessage {
+  margin-top: 10px;
+  font-size: 0.9rem;  
+}

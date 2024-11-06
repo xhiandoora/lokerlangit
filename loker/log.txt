@@ -1,0 +1,10 @@
+Array
+(
+    [data] => Array
+        (
+            [daerah] => pekalongan
+            [status] => incomplete
+            [item] => 3
+        )
+
+)
